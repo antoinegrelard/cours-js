@@ -16,4 +16,4 @@ To setup the build environment, clone the repository and then in the working dir
 
 Workfiles are located in `src` folder.
 
-You can then run `gulp` to build and serve the website on [http://localhost:8000](http://localhost:8000).
+You can then run `gulp` to build and serve the website on [http://localhost:9000](http://localhost:9000).
