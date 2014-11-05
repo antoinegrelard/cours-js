@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'cartoon';
+    src: url('../fonts/mickey-webfont.eot') format('embedded-opentype'),
+         url('../fonts/mickey-webfont.woff') format('woff'),
+         url('../fonts/mickey-webfont.ttf') format('truetype'),
+         url('../fonts/mickey-webfont.svg') format('svg');
+}
+
+body {
+	background: url(../img/memory.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+    font-family: $cartoon;
+}
+
+h1 {
+    text-align: center;
+}

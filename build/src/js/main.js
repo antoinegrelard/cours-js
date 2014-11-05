@@ -1,0 +1,1 @@
+$(document).ready(function(){"use strict";function i(i){for(var t=0;i>t;t++)s.append($("<li class='cards_list-item'></li>"))}var s=$(".cards_list");i(12)});
