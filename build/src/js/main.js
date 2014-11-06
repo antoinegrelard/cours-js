@@ -1,1 +1,1 @@
-$(document).ready(function(){"use strict";function i(i){for(var t=0;i>t;t++)s.append($("<li class='cards_list-item'></li>"))}var s=$(".cards_list");i(12)});
+$(document).ready(function(){"use strict";function s(s){for(var n=0;s>n;n++)c.append($("<li class='cards_list-item'></li>"))}var c=$(".cards_list"),n="src/img/cards",i=".png",t=[];$.ajax({url:n,async:!1,success:function(s){$(s).find("a:contains("+i+")").each(function(){t.push(this.title)})}}),s(2*t.length),console.log(_.shuffle(t))});
