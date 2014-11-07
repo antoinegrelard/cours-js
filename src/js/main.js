@@ -60,23 +60,27 @@ $(document).ready(function() {
 				second.removeAttr('style');
 			}, 500);
 		}
+
 	}
 
 	$(".cards_list-item").on("click", function() {
 		nbClicks++;
 		$(".click-number").text(nbClicks);
-		if($(this).hasClass("visible")) {
-			$(this).removeClass("visible");
-			$(this).removeAttr('style');
-			visibleCards = [];
-		} else {
-			$(this).addClass("visible");
-			visibleCards.push($(this));
-			$(this).attr('style', 'background: url( ' + $(this).data('image') + ' )');
+		if(_.size(visibleCards) != 2) {
+			if($(this).hasClass("visible")) {
+				$(this).removeClass("visible");
+				$(this).removeAttr('style');
+				visibleCards = [];
+			} else {
+				$(this).addClass("visible");
+				visibleCards.push($(this));
+				$(this).attr('style', 'background: url( ' + $(this).data('image') + ' )');
+			}
 		}
 		if(_.size(visibleCards) == 2) {
 			matchCards(visibleCards[0],visibleCards[1]);
 		}
 	});
+
 
 });
