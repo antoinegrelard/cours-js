@@ -27,6 +27,11 @@ gulp.task('index', function() {
 
 });
 
+gulp.task('mocha', function () {
+  return gulp.src('build/src/js/main.js', {read: false})
+  .pipe(mocha({reporter: 'nyan'}));
+});
+
 gulp.task('images', function() {
   return gulp.src('./src/img/**')
   .pipe(gulp.dest('build/src/img'))
