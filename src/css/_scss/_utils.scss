@@ -7,7 +7,7 @@
 }
 
 body {
-	background: url(../img/memory.jpg) no-repeat center center fixed; 
+	background: url(../img/memory.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
@@ -17,4 +17,13 @@ body {
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    text-align: right;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
 }
